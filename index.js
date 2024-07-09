@@ -45,7 +45,6 @@ async function run() {
     //   })
       //   res.send({token});
         // })
-
     // middlewares 
     // const verifyToken = (req, res, next) => {
     //   console.log('inside verify token', req.headers.authorization);
@@ -61,7 +60,6 @@ async function run() {
     //     next()
     //   })
     // }
-    
     
     // ========
     app.post('/user_data', async (req, res) => {
