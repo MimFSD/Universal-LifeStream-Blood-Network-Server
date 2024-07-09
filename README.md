@@ -1,5 +1,5 @@
 # Server name:
-  Server for Nexas Blood Donation application 
+  Server for  Blood Donation application 
 
 
 #
