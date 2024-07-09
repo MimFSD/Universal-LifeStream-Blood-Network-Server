@@ -31,13 +31,13 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
 
-    
+
     const userDataCollection = client.db('bloodDonation').collection('userData');
     const allRequestsCollection = client.db('bloodDonation').collection('createAllDonetionRequests');
     const donorInfoCollection = client.db('bloodDonation').collection('donorInfo');
     const allBlogCollection = client.db('bloodDonation').collection('allBlogs');
 
-    // jwt related api ===============================
+       // jwt related api ===============================
     // app.post('/jwt', async(req, res) => {
     //   const user = req.body;
     //   const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
