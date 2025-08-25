@@ -158,17 +158,17 @@ async function run() {
       const result = await allBlogCollection.findOne(query);
       res.send(result);
     })
-// app.get('/donation_requests', async (req, res) => {
-    //   const query = {};
-    //   const options = {
-    //  projection: { recipient_name: 1, division: 1, district: 1, upazila: 1, donation_date: 1, donation_time: 1, donation_status: 1 },
-    //     filter: { donation_status: 'pending' }
-    //   }
-    //   const results = await allRequestsCollection.find(query, options).toArray();
-    //   // Filter out any remaining "inprogress" requests from the results
-    //   const filteredResults = results.filter(item => item.donation_status === 'pending');
-    //   res.send(filteredResults);
-    // })
+app.get('/donation_requests', async (req, res) => {
+      const query = {};
+      const options = {
+     projection: { recipient_name: 1, division: 1, district: 1, upazila: 1, donation_date: 1, donation_time: 1, donation_status: 1 },
+        filter: { donation_status: 'pending' }
+      }
+      const results = await allRequestsCollection.find(query, options).toArray();
+      // Filter out any remaining "inprogress" requests from the results
+      const filteredResults = results.filter(item => item.donation_status === 'pending');
+      res.send(filteredResults);
+    })
 
     app.get('/published_blogs', async(req, res) => {
       const result = await allBlogCollection.find().toArray();
