@@ -1,5 +1,4 @@
-# Server name:
-  Server for  Blood Donation application 
+* Server for  Blood Donation application 
 
 
 #
