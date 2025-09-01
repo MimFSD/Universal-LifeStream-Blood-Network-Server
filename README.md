@@ -9,10 +9,7 @@
 
 #
 # Installation Steps: 
-Got it 👍 You’re basically asking **how to run the server side of a MERN project**.
-I’ll break it down step by step so you can easily follow:
 
----
 
 ## 🚀 Steps to Run MERN Server Side
 
